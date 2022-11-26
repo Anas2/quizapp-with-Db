@@ -1,0 +1,193 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgb(2, 2, 102); */
+    background-color: black;
+
+}
+
+
+.main {
+    text-align: center;
+
+
+}
+
+.main h1 {
+    border: 10px solid rgb(2, 2, 102);
+    ;
+    background-color: black;
+    height: auto;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: left;
+    color: blue;
+    font-weight: bold;
+
+
+
+}
+
+.questionCount {
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.925);
+}
+
+.questionDiv {
+    /* border: 2px solid blue; */
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.925);
+}
+
+.options {
+
+    font-size: 20px;
+    width: 345px;
+    /* border: 2px solid green; */
+    margin: 10px 48px 10px 48px;
+    border-radius: 20px;
+    background-color: black;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.925);
+
+
+}
+
+.options:hover {
+    background-color: rgb(0, 0, 121);
+    color: rgba(255, 255, 255, 0.925);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.parentDivAllOption {
+    /* border: 2px solid red; */
+}
+
+.nextbtns {
+    /* border: 1px solid green; */
+    /* padding: 14px; */
+    text-align: center;
+    position: relative;
+
+
+}
+
+.nextbtns button {
+
+    width: 120px;
+    border-radius: 22px;
+    background-color: rgb(0, 0, 121);
+    margin: 20px 0px 0px 0px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    right: 22px;
+    padding: 3px;
+    font-size: 22px;
+
+}
+
+.nextbtns button:hover {
+    background-color: black;
+    color: rgb(230, 230, 230);
+}
+
+.options:focus {
+    background-color: rgb(0, 0, 121);
+    color: rgb(230, 230, 230);
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+
+.Disabled {
+    pointer-events: none;
+}
+
+.Enabled {
+    pointer-events: fill;
+}
+
+#overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+}
+
+.inside {
+    margin: 100px;
+    /* height: 100px; */
+    background-color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 10px 10px 8px 10px rgb(12 6 62 / 70%);
+}
+
+.inside h2 {
+    padding: 10px;
+
+    /* letter-spacing: 2px; */
+}
+
+.inside h1,
+h2,
+span,
+i {
+    background-color: #ffffff00;
+}
+
+@media only screen and (max-width: 600px) {
+    .options {
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .inside {
+        margin: 115px 20px 0px 20px;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 50px;
+
+    }
+
+    .inside h2 {
+        font-size: 18px;
+    }
+
+    .inside h1 {
+        font-size: 25px;
+    }
+
+    .inside h1,
+    h2,
+    span,
+    i {
+        background-color: #ffffff00;
+    }
+
+    .questionDiv {
+        font-size: 28px;
+    }
+
+}

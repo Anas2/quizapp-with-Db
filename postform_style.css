@@ -1,0 +1,92 @@
+/* ========================================================================== */
+
+
+                    /* POST FORM CSS  */
+
+.formDiv{
+    text-align: center;
+    width: 100%;
+    /* border: 2px solid green; */
+    padding-top: 30px;
+
+}
+.formDiv form input{
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+ 
+}
+.formDiv form{
+    border: 1px solid;
+    margin: 0px 300px 0px 300px;
+    /* width: 100%; */
+}
+.formDiv form button{
+    padding: 10px;
+    background-color: rgb(5, 92, 107);
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    font-weight: bold;
+}
+
+/* ======================== Question Form Css ============================== */
+
+.question{
+    padding: 10px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.li{
+    list-style: decimal-leading-zero;
+}
+.optionsli{
+    background-color: rgb(224, 224, 224) !important;
+    border: none;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    margin: 5px 0px 5px 0px ;
+    width: 500px !important;
+    border-radius: 3px !important;
+    color: black !important;
+    text-align: left;
+}
+.optionsli b{
+    /* font-size: 20px; */
+    padding: 10px;
+    
+}
+.optionsli:hover{
+    background-color: rgb(5, 92, 107) !important;
+    color: white !important;
+}
+.optionsli:focus {
+    background-color: rgb(5, 92, 107) !important;
+    border-radius: 10px !important;
+    color: white !important;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .formDiv form{
+        margin: 0px;
+    }
+    .formDiv form button{
+        font-size: 16px;
+        width: 120px;
+    }
+    form textarea{
+        width: 100%;
+     
+    }
+    .optionsli{
+        width: 100% !important;
+    }
+    .optionsli b{
+        font-size: 16px !important;
+    }
+}
+

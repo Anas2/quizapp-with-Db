@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Quiz</title>
+    <link rel="stylesheet" href="postform_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="formDiv">
+        <div style="text-align: left ;">
+            <form style="padding: 20px;">
+                <label for="textarea">Write Your Question Here :</label><br>
+                <textarea class="question" id="textAreaQuestion" name="" rows="8" cols="70"></textarea><br>
+                <label for="option">Options</label><br>
+                <input type="text" name="" id="optionstext" placeholder="option...">
+                <span style="padding: 8px; border:1px solid; font-size: 18px; background-color: rgb(5, 92, 107); color: white;" onclick="createOptionField()"><i class="fa-solid fa-plus"></i></span><br>
+                <ul id="optionappend"></ul>
+                <label for="answereKey">Correct Answere key</label><br>
+                <input disabled type="text" name="" id="answereKey" placeholder="Correct key..."><br>
+                <button type="submit" onclick="postQuestions(event)">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script type="module" src="app.js"></script>
+
+</html>

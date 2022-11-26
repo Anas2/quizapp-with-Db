@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body onload="getData()">
+    <div id="overlay" >
+        <div class="inside">
+            <h1 style="text-align: center; margin-bottom: 35px;" id="congOrBluck"></h1>
+            <h2>Total Questions : <span id="totalquestions"></span></h2>
+            <h2>Total Marks : <span id="totalmarkss"></span></h2>
+            <h2>Obtained Marks : <span id="ObtainedMarks"></span></h2>
+            <h2>Status : <span id="status"></span></h2>
+            <h2>Percentage : <span id="percentage"></span></h2>
+        </div>
+    </div>
+
+        <div class="main col-md-12 col-sm-12">
+            <h1 class="p-3 col-md-12">Quiz App </h1>
+            <br>
+            <div class="questionCount">
+                <span id="question ">Question: </span><span id="currentcount"></span> / <span id="totalcount"></span>
+            </div>
+            <br>
+            <div class="questionDiv">
+                <p id="completeQuestion"></p> <br>
+            </div>
+
+            <div class="parentDivAllOption p-2" id="allOption"></div>
+        </div>
+
+        <div class="nextbtns">
+            <!-- <button class="Disabled" id="previous" onclick="previous()"><i style="font-size:16px ;" class="fa-solid fa-caret-left"></i> Previous</button> -->
+            <button id="next" onclick="next()">Next <i style="font-size:20px ;" class="fa-solid fa-caret-right"></i></button>
+        </div>
+    
+</body>
+<script type="module" src="app.js"></script>
+
+</html>
